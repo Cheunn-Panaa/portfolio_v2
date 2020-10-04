@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technologies",
+  "info": {
+    "name": "Technology"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "level": {
+      "type": "integer",
+      "min": 0,
+      "max": 10
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Frameworks",
+        "Languages",
+        "Tools",
+        "Design"
+      ]
+    }
+  }
+}

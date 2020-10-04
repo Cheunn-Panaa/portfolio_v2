@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "skills",
+  "info": {
+    "name": "Skill"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "level": {
+      "type": "integer",
+      "max": 10,
+      "min": 0
+    },
+    "technology": {
+      "model": "technology"
+    },
+    "Purpose": {
+      "type": "enumeration",
+      "enum": [
+        "Professionally",
+        "Fun",
+        "Studying"
+      ]
+    }
+  }
+}

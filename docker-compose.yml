@@ -1,7 +1,14 @@
 version: '3'
 services:
   strapi:
-    image: strapi/strapi
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+      args:
+        STRAPI_VERSION: 3.1.6
+        BASE_VERSION: 12-alpine
+    #image: strapi/strapi
+    #image: strapi/base
     environment:
       DATABASE_CLIENT: postgres
       DATABASE_NAME: strapi
@@ -13,6 +20,7 @@ services:
       - ./app:/srv/app
     ports:
       - '1337:1337'
+      - '8000:8000'
     depends_on:
       - postgres
 
@@ -22,5 +30,7 @@ services:
       POSTGRES_DB: strapi
       POSTGRES_USER: strapi
       POSTGRES_PASSWORD: strapi
+    ports:
+      - '5432:5432'
     volumes:
       - ./data:/var/lib/postgresql/data
