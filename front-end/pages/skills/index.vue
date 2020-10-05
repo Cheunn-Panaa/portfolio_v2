@@ -1,7 +1,7 @@
 <template>
   <div class="box page-card column">
     <h2>
-      Header
+      skills
     </h2>
   </div>
 </template>

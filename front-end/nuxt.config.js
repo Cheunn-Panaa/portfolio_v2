@@ -14,7 +14,10 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: ['vuesax/dist/vuesax.css'],
+  css: [
+    // CSS file in the project
+    '@/assets/css/main.css'
+  ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: ['@/plugins/vuesax'],
@@ -31,7 +34,7 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     'nuxt-buefy',
-
+    global.HTMLImageElement = typeof window === 'undefined' ? Object : window.HTMLImageElement
   ],
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

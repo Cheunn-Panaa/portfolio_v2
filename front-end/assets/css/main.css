@@ -1,0 +1,183 @@
+/**
+  DEFAULT
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header,
+h2,
+figure,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+/**
+ COLOR GLOBAL
+ */
+
+.main-bg {
+  background-color: #0760fe;
+}
+
+.main-text {
+  color: #0760fe;
+}
+
+/**
+BODY AND HTML
+ */
+body{
+  background:0 0 transparent url('~@/assets/images/background.jpeg') no-repeat;
+  padding: 0 1.5rem;
+}
+
+body:before {
+  opacity: 0.95;
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: url('~@/assets/images/background-overlay.jpg') 50% no-repeat #14151b;
+  background-size:cover;
+}
+
+html {
+  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+
+  background: #181818;
+}
+
+/**
+  Containers such as cards
+ */
+.page-card {
+  background: #ffffff;
+  margin-left: 1.5rem;
+  padding: 1.25rem;
+}
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align:left;
+}
+.page-subtitle {
+  color: #7C8097;
+  font-size: .75em;
+  font-weight: 300;
+  text-align: left;
+  /* line-height: 30%; */
+  /* padding-top: .5em; */
+  padding-bottom: .7em;
+/* letter-spacing: 1.5px; */
+}
+
+.page-description {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.description-highlight {
+  color:#0760fe;
+  font-weight:700;
+}
+
+
+.profile-card {
+background: #ffffff;
+padding: 1.5rem 0;
+}
+
+.profile-card h2 {
+font-size: 0.9rem;
+letter-spacing: 1.25px;
+font-weight: 300;
+}
+
+.profile-card .name {
+color: #49515d;
+}
+
+.container {
+margin: 0 auto;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-wrap:wrap;
+}
+
+/**
+PROFILE COMPONENT
+*/
+.avatar {
+  position: relative;
+  width: 50%;
+  margin: -35% auto 0 !important;
+}
+
+.avatar img {
+  object-fit: fill;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar:after {
+  content: "";
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, .1), 0 0 0 1px rgba(10, 10, 10, .02);
+  background: white;
+  position: absolute;
+  top: -5%;
+  bottom: -5%;
+  border-radius: 50%;
+  left: -5%;
+  z-index: 1;
+  right: -5%;
+}
+.socials ul {
+  margin: 0 auto;
+}
+
+.socials ul li {
+  display: inline-block;
+}
+
+.extra-info {
+  background: grey;
+  text-align: left;
+}
+/**
+  NAVBAR
+ **/
+
+#nav-bar{
+  background:transparent;
+  color:white;
+  width:100%;
+}
+
+.nav-links {
+  display:flex;
+  flex-direction:row;
+  margin-left: 1.5rem;
+}
+

@@ -1,15 +1,19 @@
 <template>
-  <div class="box profile-card column is-one-quarter">
+  <div class="box card profile-card column is-one-quarter">
     <header class="content">
-      <b-image
+      <figure class="b-image-wrapper avatar image is-2by1">
+        <img class="is-rounded" :src="require('~/assets/images/test.png')"/>
+      </figure>
+      <!--<b-image
+        class="avatar"
         alt="Cheunn Nourry"
         rounded
         lazy="false"
         responsive="false"
         ratio="1by1"
-      ></b-image>
+      ></b-image>-->
       <h1 class="name has-text-weight-normal is-size-4 mb-4 mt-4">Cheunn <b>Nourry</b></h1>
-      <h2 class="p-3 button is-rounded">Software Developer</h2>
+      <h2 class="mt-2 has-text-grey">Software Developer</h2>
 
 
     </header>
@@ -84,43 +88,3 @@
     </footer>
   </div>
 </template>
-
-<script>
-    export default {}
-</script>
-<style>
-  .profile-card {
-    background: #ffffff;
-    padding: 1.5rem 0;
-  }
-
-  .profile-card h2 {
-    background: grey;
-    font-size: 0.9rem;
-  }
-
-  .profile-card .name {
-    color: #49515d;
-  }
-
-  header,
-  h2,
-  figure,
-  ul{
-    margin: 0 !important;
-  }
-  ul {
-    list-style-type: none !important;
-  }
-  .socials ul{
-    margin: 0 auto;
-  }
-  .socials ul li {
-    display:inline-block;
-  }
-
-  .extra-info {
-    background: grey;
-    text-align:left;
-  }
-</style>
