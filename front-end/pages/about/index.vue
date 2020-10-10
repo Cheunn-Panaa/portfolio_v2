@@ -21,16 +21,20 @@
     <p class="page-subtitle">
       Gotta relax after a good day !
     </p>
-
-    <ul class="hobbies-list">
-      <li class="hobby-item">
-        <b-icon
-          icon="playlist-music"
-          size="is-large"
-          class="main-text">
-        </b-icon>
-        Music
-      </li>
-    </ul>
+    <Hobbies :hobbies="hobbies"></Hobbies>
   </div>
 </template>
+
+<script>
+  import {mapState, mapActions, mapMutations} from 'vuex';
+    export default {
+        computed: mapState({
+            hobbies: state => state.hobbies
+        }),
+        data() {
+            return {
+                loading: false
+            }
+        }
+    }
+</script>
