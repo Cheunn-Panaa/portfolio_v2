@@ -8,7 +8,14 @@
   box-sizing: border-box;
   margin: 0;
 }
-
+/* A link that has not been visited */
+a:link
+,a:visited,
+a:hover,
+a:active {
+  color: #4a4a4a;
+  text-decoration: none;
+}
 header,
 h2,
 figure,
@@ -181,3 +188,42 @@ PROFILE COMPONENT
   margin-left: 1.5rem;
 }
 
+
+/**
+HOBBIES
+ */
+.hobbies-list {
+  flex-wrap:wrap;
+}
+
+.hobby-item {
+  text-align: left;
+}
+
+.hobby-item a {
+  text-decoration: none;
+}
+
+.hobby-item div {
+  display:inline-block;
+}
+
+.hobby-item h3 {
+  line-height: 40%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hobby-item .description-highlight {
+  font-size: 0.7rem;
+}
+
+/**
+MUSIC
+ */
+
+iframe {
+  display:flex;
+  width:100%;
+  flex:1 1 auto;
+}

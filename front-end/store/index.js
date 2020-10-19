@@ -25,14 +25,22 @@
 // })
 // export default createStore
 const initialState = () => ({
-  hobbies: []
+  hobbies: [],
+  playlists: []
 })
 
 export const state = initialState;
-
+export const getters = {
+  getPlaylists: (state) => {
+    return state.playlists
+  }
+}
 export const mutations = {
   setHobbies(state, hobbies) {
     state.hobbies = hobbies
+  },
+  setPlaylists(state, playlists) {
+    state.playlists = playlists
   }
 };
 
@@ -40,5 +48,9 @@ export const actions = {
   nuxtServerInit({commit}) {
     return client.fetchHobbies()
       .then(hobbies => commit('setHobbies', hobbies))
+  },
+  loadPlaylists({commit}) {
+    return client.fetchPlaylists()
+      .then(playlists => commit('setPlaylists', playlists))
   }
 };
