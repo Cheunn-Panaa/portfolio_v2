@@ -41,4 +41,9 @@ export default {
   build: {},
 
   // Vue config
+  watchers: {
+    webpack: {
+      poll: true
+    }
+  }
 }

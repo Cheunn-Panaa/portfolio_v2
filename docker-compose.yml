@@ -23,7 +23,19 @@ services:
       - '8000:8000'
     depends_on:
       - postgres
-
+  frontend:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    command: ["npm", "run", "dev"]
+    volumes:
+      - ./front-end:/var/build
+      - ./front-end/assets:/var/build/assets
+      - /var/build/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      HOST: 0.0.0.0
   postgres:
     image: postgres
     environment:

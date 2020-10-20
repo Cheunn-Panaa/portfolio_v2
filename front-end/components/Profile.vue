@@ -2,7 +2,7 @@
   <div class="box card profile-card column is-one-quarter">
     <header class="content">
       <figure class="b-image-wrapper avatar image is-2by1">
-        <img class="is-rounded" :src="require('~/assets/images/test.png')"/>
+        <img class="is-rounded" :src="require('@/assets/images/test.png')"/>
       </figure>
       <!--<b-image
         class="avatar"
