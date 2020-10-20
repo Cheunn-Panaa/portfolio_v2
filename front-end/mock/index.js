@@ -1,5 +1,5 @@
-import hobbies from './data/hobbies'
-import playlists from './data/playlists'
+import hobbies from './dataset/hobbies'
+import playlists from './dataset/playlists'
 
 const fetch = (mockData, time = 0) => {
   return new Promise((resolve) => {

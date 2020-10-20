@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Music",
+    "description": "j'aime la musique",
+    "icon": "playlist-music"
+  },
+  {
+    "id": 2,
+    "name": "Games",
+    "description": "j'aime la game",
+    "icon": "google-controller"
+  },
+  {
+    "id": 3,
+    "name": "Sport",
+    "description": "j'aime la sport",
+    "icon": "rugby"
+  },
+  {
+    "id": 4,
+    "name": "Food",
+    "description": "j'aime la food",
+    "icon": "pasta"
+  }
+]
