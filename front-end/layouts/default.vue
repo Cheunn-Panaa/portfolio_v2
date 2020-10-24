@@ -1,16 +1,13 @@
 <template>
   <div class="container">
-
-    <Profile class="column is-one-quarter box card profile-card"/>
+    <Profile class="column is-one-quarter box card profile-card" />
 
     <div class="column is-three-quarters">
-      <Navbar/>
+      <Navbar />
 
-      <Nuxt/>
+      <Nuxt />
     </div>
   </div>
 </template>
 
-<style>
-
-</style>
+<style></style>

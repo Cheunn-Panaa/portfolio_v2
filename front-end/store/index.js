@@ -1,6 +1,6 @@
 // import Vue from 'vue'
 // import Vuex from 'vuex'
- import client from '../mock/index.js';
+import client from '../mock/index.js'
 //
 // Vue.use(Vuex)
 //
@@ -26,14 +26,18 @@
 // export default createStore
 const initialState = () => ({
   hobbies: [],
-  playlists: []
+  playlists: [],
+  experiences: [],
 })
 
-export const state = initialState;
+export const state = initialState
 export const getters = {
   getPlaylists: (state) => {
     return state.playlists
-  }
+  },
+  getExperiences: (state) => {
+    return state.experiences
+  },
 }
 export const mutations = {
   setHobbies(state, hobbies) {
@@ -41,16 +45,26 @@ export const mutations = {
   },
   setPlaylists(state, playlists) {
     state.playlists = playlists
-  }
-};
+  },
+  setExperiences(state, experiences) {
+    state.experiences = experiences
+  },
+}
 
 export const actions = {
-  nuxtServerInit({commit}) {
-    return client.fetchHobbies()
-      .then(hobbies => commit('setHobbies', hobbies))
+  nuxtServerInit({ commit }) {
+    return client
+      .fetchHobbies()
+      .then((hobbies) => commit('setHobbies', hobbies))
   },
-  loadPlaylists({commit}) {
-    return client.fetchPlaylists()
-      .then(playlists => commit('setPlaylists', playlists))
-  }
-};
+  loadPlaylists({ commit }) {
+    return client
+      .fetchPlaylists()
+      .then((playlists) => commit('setPlaylists', playlists))
+  },
+  loadExperiences({ commit }) {
+    return client
+      .fetchExperiences()
+      .then((experiences) => commit('setExperiences', experiences))
+  },
+}

@@ -1,13 +1,16 @@
 [
   {
+    "id": 0,
     "name": "Top du mois",
     "link": "https://open.spotify.com/embed/playlist/0UZV6PzWpW3pc8qzyjtCBV"
   },
   {
+    "id": 1,
     "name": "Rock",
     "link": "https://open.spotify.com/embed/playlist/0UZV6PzWpW3pc8qzyjtCBV"
   },
   {
+    "id": 2,
     "name": "Détente",
     "link": "https://open.spotify.com/embed/playlist/0UZV6PzWpW3pc8qzyjtCBV"
   }

@@ -14,7 +14,6 @@ RUN npm install --quiet --unsafe-perm --no-progress --no-audit
 FROM prereq as development
 
 RUN npm install --quiet --unsafe-perm --no-progress --no-audit --only=development
-
 ## All files will be volume mounted into the container
 EXPOSE 3000
 

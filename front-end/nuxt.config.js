@@ -1,5 +1,3 @@
-import Vue from "vue/types/vue";
-
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -18,7 +16,7 @@ export default {
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     // CSS file in the project
-    '@/assets/css/main.css'
+    '@/assets/css/main.css',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -35,12 +33,17 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    ['nuxt-buefy', {
-      defaultIconPack: 'fas',
-      materialDesignIconsHRef: "https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    }],
+    [
+      'nuxt-buefy',
+      {
+        defaultIconPack: 'fas',
+        materialDesignIconsHRef:
+          'https://use.fontawesome.com/releases/v5.14.0/css/all.css',
+      },
+    ],
     'nuxt-fontawesome',
-    global.HTMLImageElement = typeof window === 'undefined' ? Object : window.HTMLImageElement
+    (global.HTMLImageElement =
+      typeof window === 'undefined' ? Object : window.HTMLImageElement),
   ],
 
   fontawesome: {
@@ -48,13 +51,13 @@ export default {
     imports: [
       {
         set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab']
+        icons: ['fab'],
       },
       {
         set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      }
-    ]
+        icons: ['fas'],
+      },
+    ],
   },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
@@ -62,7 +65,7 @@ export default {
   // Vue config
   watchers: {
     webpack: {
-      poll: true
-    }
-  }
+      poll: true,
+    },
+  },
 }

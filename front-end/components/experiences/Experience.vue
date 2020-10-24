@@ -1,22 +1,60 @@
 <template>
-  <b-tabs vertical class="experience block">
-    <b-tab-item label="Dolmen">
-      <h3 class="company">Developper <a href="https://www.dolmen-tech.com/uk/">@Dolmen</a></h3>
-      <p class="page-subtitle">November 2019 - Present</p>
-      <ul class="missions">
+  <b-tabs v-model="activeTab" vertical class="experience block">
+    <b-tab-item
+      v-for="experience in experiences"
+      :key="experience.id"
+      :value="experience.company"
+      :label="experience.company"
+    >
+      <h3 class="company">
+        {{ experience.job }}
+        <a :href="experience.company_website">@{{ experience.company }}</a>
+      </h3>
+      <p class="page-subtitle">
+        {{ convertDateFormat(experience.start_date) }} -
+        {{ convertDateFormat(experiences.end_date) }}
+      </p>
+      <ul
+        v-for="(mission, index) in experience.missions"
+        :key="index"
+        class="missions"
+      >
+        <li></li>
         <li>
-          Write modern, performant, maintainable code in a microservice architechture as well as legacy maintainability
-        </li>
-        <li>
-          Work with a variety of different languages, environement, frameworks such as VueJS, Javascript, Springboot, GCP, Docker, GitLab CI, Symfony
-        </li>
-        <li>
-          Applying the Agile concept on 2weeks sprint and switching to technical support one a regular basis. Which leads to communication with
-          the delivery and the customer success team and different profile of understanding.
+          {{ mission }}
         </li>
       </ul>
     </b-tab-item>
-    <b-tab-item label="CapGemini"></b-tab-item>
-    <b-tab-item label="Face"></b-tab-item>
   </b-tabs>
 </template>
+
+<script>
+import { mapGetters } from 'vuex'
+export default {
+  data() {
+    return {
+      activeTab: 'Dolmen',
+    }
+  },
+  computed: {
+    ...mapGetters({
+      experiences: 'getExperiences',
+    }),
+  },
+  created() {
+    this.$store.dispatch('loadExperiences')
+  },
+  methods: {
+    convertDateFormat(date) {
+      if (date) {
+        const d = new Date(date)
+        return new Intl.DateTimeFormat('en-US', {
+          month: 'short',
+          year: 'numeric',
+        }).format(d)
+      }
+      return 'Present'
+    },
+  },
+}
+</script>

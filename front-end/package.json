@@ -11,15 +11,6 @@
     "lint": "npm run lint:js",
     "test": "jest"
   },
-  "lint-staged": {
-    "*.{js,vue}": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
   "dependencies": {
     "@nuxt/typescript-runtime": "^2.0.0",
     "core-js": "^3.6.5",
@@ -28,8 +19,6 @@
     "vuesax": "^4.0.1-alpha.24"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
     "@fortawesome/free-brands-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@nuxt/types": "^2.14.5",
