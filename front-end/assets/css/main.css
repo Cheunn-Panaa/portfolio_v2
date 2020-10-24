@@ -1,3 +1,16 @@
+
+/**
+ COLOR GLOBAL
+ */
+
+.main-bg {
+  background-color: #0760fe;
+}
+
+.main-text {
+  color: #0760fe;
+}
+
 /**
   DEFAULT
  */
@@ -27,17 +40,6 @@ ul {
   list-style-type: none !important;
 }
 
-/**
- COLOR GLOBAL
- */
-
-.main-bg {
-  background-color: #0760fe;
-}
-
-.main-text {
-  color: #0760fe;
-}
 
 /**
 BODY AND HTML
@@ -160,6 +162,9 @@ PROFILE COMPONENT
   z-index: 1;
   right: -5%;
 }
+.socials {
+  margin: 0 0 1.5rem 0;
+}
 .socials ul {
   margin: 0 auto;
 }
@@ -169,18 +174,34 @@ PROFILE COMPONENT
 }
 
 .extra-info {
-  background: grey;
+  background: #dbdbdb;
   text-align: left;
 }
 /**
   NAVBAR
  **/
 
-#nav-bar{
-  background:transparent;
-  color:white;
-  width:100%;
+#navbar{
+  margin: 0 0 0.75rem 1.5rem;
+  padding: 0;
 }
+
+
+.navbar-item.is-tab:focus, .navbar-item.is-tab:hover,
+.nuxt-link-exact-active,
+.nuxt-link-active{
+  color:#0760fe !important;
+  border-bottom: 5px solid #0760fe !important;
+}
+
+.navbar-item.is-tab
+{
+  line-height: 2.5rem;
+  font-weight:600;
+  padding-bottom:calc(0.5rem - 5px);
+  border-bottom: 5px solid transparent;
+}
+
 
 .nav-links {
   display:flex;
@@ -226,4 +247,51 @@ iframe {
   display:flex;
   width:100%;
   flex:1 1 auto;
+}
+
+
+/**
+ Experience Page
+ */
+
+.experience .tabs a {
+  font-weight:600;
+  border-bottom:0;
+  border-left:3px solid #dbdbdb;
+}
+
+.experience .tabs li.is-active a{
+
+  background: rgba(7,96,254,0.1);
+  border-left:3px solid #0760fe;
+  color: #0760fe
+}
+
+.b-tabs.is-vertical {
+  flex-wrap:nowrap;
+}
+.tab-content {
+  padding: 0 1rem;
+  text-align:left;
+}
+
+.company {
+  font-weight:600;
+  font-size: 1.25rem;
+}
+.company a{
+  color:#0760fe;
+  text-decoration:underline;
+}
+
+.missions li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
+.missions li::before {
+  content: "▹";
+  position: absolute;
+  left: 0px;
+  color:#0760fe;
 }

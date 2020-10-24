@@ -1,3 +1,5 @@
+import Vue from "vue/types/vue";
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -33,10 +35,27 @@ export default {
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    'nuxt-buefy',
+    ['nuxt-buefy', {
+      defaultIconPack: 'fas',
+      materialDesignIconsHRef: "https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    }],
+    'nuxt-fontawesome',
     global.HTMLImageElement = typeof window === 'undefined' ? Object : window.HTMLImageElement
   ],
 
+  fontawesome: {
+    component: 'font-awesome-icon',
+    imports: [
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab']
+      },
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
+  },
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 

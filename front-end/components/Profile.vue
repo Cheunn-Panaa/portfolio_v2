@@ -1,5 +1,5 @@
 <template>
-  <div class="box card profile-card column is-one-quarter">
+  <div>
     <header class="content">
       <figure class="b-image-wrapper avatar image is-2by1">
         <img class="is-rounded" :src="require('@/assets/images/test.jpg')"/>
@@ -22,23 +22,26 @@
         <ul>
           <li>
             <b-icon
+              class="main-text"
+              pack="fab"
               icon="linkedin"
-              size="is-medium"
-              type="mdi-dark">
+              size="is-large">
             </b-icon>
           </li>
           <li class="mx-2">
             <b-icon
-              icon="github"
-              size="is-medium"
-              type="mdi-dark">
+              class="main-text"
+              pack="fab"
+              icon="github-square"
+              size="is-large">
             </b-icon>
           </li>
           <li>
             <b-icon
-              icon="instagram"
-              size="is-medium"
-              type="mdi-dark">
+              class="main-text"
+              pack="fab"
+              icon="instagram-square"
+              size="is-large">
             </b-icon>
           </li>
         </ul>
@@ -49,9 +52,9 @@
           <li class="has-text-weight-medium my-2">
             <b-icon
               class="mr-2"
-              icon="cake-variant"
-              size="is-small"
-              type="mdi-dark">
+              pack="fas"
+              icon="birthday-cake"
+              size="is-small">
             </b-icon>
             21, Mars 1997
           </li>
@@ -59,19 +62,19 @@
           <li class="has-text-weight-medium my-2">
             <b-icon
               class="mr-2"
-              icon="map-marker"
-              size="is-small"
-              type="mdi-dark">
+              pack="fas"
+              icon="map-pin"
+              size="is-small">
             </b-icon>
             Rennes
           </li>
 
           <li class="has-text-weight-medium my-2">
             <b-icon
+              pack="fas"
               class="mr-2"
-              icon="cellphone-android"
-              size="is-small"
-              type="mdi-dark">
+              icon="phone-alt"
+              size="is-small">
             </b-icon>
             0610291546
           </li>

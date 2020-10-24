@@ -1,8 +1,9 @@
 <template>
   <ul class="columns hobbies-list">
-    <li v-for="hobby in hobbies" class="column is-half hobby-item">
+    <li v-for="hobby in hobbies" class="column is-one-quarter hobby-item">
       <NuxtLink :to="'/about/' + hobby.name">
         <b-icon
+          pack="fas"
           :icon="hobby.icon"
           size="is-large"
           class="main-text">
