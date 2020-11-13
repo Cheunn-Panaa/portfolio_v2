@@ -4,7 +4,7 @@
      "company": "Dolmen",
      "job": "Developper",
      "company_website": "https://dolmen-tech.com",
-     "start_date": "11-04-2019",
+     "start_date": "2019-11-04",
      "end_date": null,
      "missions": [
        "Write modern, performant, maintainable code in a microservice architechture as well as legacy maintainability",
@@ -17,8 +17,8 @@
      "company": "Cap Gemini",
      "job": "Fullstack Developper (Parttime)",
      "company_website": "https://www.capgemini.com/",
-     "start_date": "08-06-2018",
-     "end_date": "09-04-2019",
+     "start_date": "2018-08-06",
+     "end_date": "2019-09-04",
      "missions": [
        "Write modern, performant, maintainable code in a microservice architechture as well as legacy maintainability",
        "Work with a variety of different languages, environement, frameworks such as VueJS, Javascript, Springboot, GCP, Docker, GitLab CI, Symfony",
@@ -30,8 +30,8 @@
      "company": "Code Académie",
      "job": "Assistant Trainer",
      "company_website": "http://code-academie.fr/",
-     "start_date": "07-30-2018",
-     "end_date": "09-04-2017",
+     "start_date": "2018-07-30",
+     "end_date": "2017-09-04",
      "missions": [
        "Write modern, performant, maintainable code in a microservice architechture as well as legacy maintainability",
        "Work with a variety of different languages, environement, frameworks such as VueJS, Javascript, Springboot, GCP, Docker, GitLab CI, Symfony",

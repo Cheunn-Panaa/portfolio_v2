@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Environment",
+    "icon": ["","",""],
+    "description": "I've worked on multiple environment, being UNIX based or on Windows. But in the end i alwyas endup going back to UNIX like envs because of how practical it is when it comes to updates and package management"
+  },
+  {
+    "title": "Front End Development",
+    "icon": [""],
+    "description": "Being React or VueJS i can adapt to both, they are pretty similar overall. I like the component based architecture of Vue while i prefer the React's syntax. If i had to choose one i'll go for react just for the syntax and the ecosystem !"
+  },
+  {
+    "title": "Back End Development",
+    "icon": [""],
+    "description": "While i really enjoy the OOP and ecosystem of Java (and especially with springboot 2), i've mostly worked with php (symfony & drupal) and nodejs. I'm trying to pull of more work on Java and Golang because they are much more robust in micro-service architectures (which i find amazing)"
+  },
+  {
+    "title": "DevOps",
+    "icon": [""],
+    "description": "I think every developer should have basic skills when it comes to IT and Deployment. The Docker/Kubernetes ecosystem is AMAZING. A company that starts growing and plans on going the microservice way should absolutely go on container based apps paired with a CI/CD !!"
+  },
+  {
+    "title": "Project Management ",
+    "icon": [""],
+    "description": "I've been working with the Agile method for 2 years now, i'm used to work with thing such as: poker planning, daily scrum, kaban board, sprint planning and so on..."
+  },
+  {
+    "title": "I'm only Human Afterall",
+    "icon": [""],
+    "description": "Usually forgotten, but we are all Humans. I always try my best to make my colleagues job easyer, share some culture, interest or simply play games with them (can't beat me at Tarrot i'm sorry !). I've done a 'Music of the day' playlist for my last company they can enjoy every kind of music everyday"
+  }
+]

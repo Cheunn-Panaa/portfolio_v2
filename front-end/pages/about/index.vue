@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div class="box page-card column">
     <h2 class="page-title main-text">About Me</h2>
     <p class="page-subtitle">Let's get intimate... but not too much :)</p>
@@ -31,5 +31,14 @@ export default {
   computed: mapState({
     hobbies: (state) => state.hobbies,
   }),
+  // Watch for $route.query.page to call Component methods (asyncData, fetch, validate, layout, etc.)
+  watchQuery: ['page'],
+  // Key for <NuxtChild> (transitions)
+  key: to => to.fullPath,
+  // Called to know which transition to apply
+  transition (to, from) {
+    if (!from) { return 'slide-left' }
+    return +to.query.page < +from.query.page ? 'slide-right' : 'slide-left'
+  },
 }
 </script>

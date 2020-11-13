@@ -1,6 +1,16 @@
 /**
 Variables
  */
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(30px, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-30px, 0);
+}
 :root {
   --main-color: #0760fe;
   --main-black: #4a4a4a;
@@ -88,9 +98,15 @@ html {
   background: #181818;
 }
 
+#right-container {
+  padding: 0 0.75rem;
+}
 /**
   Containers such as cards
  */
+#page {
+  display:flex;
+}
 .page-card {
   background: #ffffff;
   margin-left: var(--fs-xxl);
@@ -124,7 +140,9 @@ html {
   font-weight:var(--fw-xxl);
 }
 
-
+#profile {
+  margin:0;
+}
 .profile-card {
 background: #ffffff;
 padding: var(--fs-xxl) 0;
